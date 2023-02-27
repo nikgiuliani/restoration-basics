@@ -1,0 +1,17 @@
+a.nav-items {
+    color: white;
+    cursor: pointer;
+}
+
+a.nav-items:hover {
+    color: rgb(206, 206, 206);
+}
+
+.temple-icon {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.temple-icon:hover {
+    opacity: 80%;
+}
