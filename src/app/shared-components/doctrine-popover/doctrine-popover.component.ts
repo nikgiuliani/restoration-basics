@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-doctrine-popover',
   templateUrl: './doctrine-popover.component.html',
   styleUrls: ['./doctrine-popover.component.css']
 })
-export class DoctrinePopoverComponent implements OnInit {
+export class DoctrinePopoverComponent {
+  doctrineData: any; 
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
