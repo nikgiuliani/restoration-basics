@@ -293,3 +293,8 @@ svg#clouds {
         visibility: hidden;
     }
 }
+
+.popover-content {
+    --height: min(90vh, 460px) !important;
+    --width: min(92vw, 770px) !important;
+}
