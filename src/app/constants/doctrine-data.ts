@@ -113,7 +113,7 @@ export const CORE_DOCTRINES = {
     img: 'url(../../../assets/img/salt_lake_temple.jpeg)',
     text: [
       `
-        In ancient times, God has always commanded His people to build a house where He could come and visit His people. Moses’ people made the Tabernacle, Solomon 
+        In ancient times, God has always commanded His people to build a house where He could come and visit His people. Moses\' people made the Tabernacle, Solomon 
         built the temple in Jerusalem, and in the early days of the Restoration, the Lord commanded the people through the Prophet Joseph Smith to establish houses 
         of the Lord (D&C 57:3). The temple is the place closest to God where disciples of Christ make covenants with Him. Covenants are sacred promises made between 
         an individual and God. In the Church, individuals make covenants through baptism and continue to make covenants as they progress through various stages of 
@@ -122,27 +122,27 @@ export const CORE_DOCTRINES = {
         <li>The Law of Obedience</li>
         \tThis covenant means to obey the Lord by striving to do whatever He commands us to do throughout the course of our lives.
         <li>The Law of Sacrifice</li>
-        \tThis covenant means to do all we can to support the Lord’s work and repent with a broken heart and contrite spirit. In essence, we sacrifice the natural 
+        \tThis covenant means to do all we can to support the Lord\'s work and repent with a broken heart and contrite spirit. In essence, we sacrifice the natural 
           man inside each of us.
         <li>The Law of the Gospel</li>
         \tThis covenant means to live the higher law Jesus Christ taught while on earth, which includes faith, repentance, making and keeping sacred covenants, 
         receiving the Gift of the Holy Ghost, and enduring to the end.
         <li>The Law of Chastity</li>
-        \tThis covenant means that we have sexual relations only with the person to whom we are legally and lawfully wedded according to God’s law.
+        \tThis covenant means that we have sexual relations only with the person to whom we are legally and lawfully wedded according to God\'s law.
         <li>The Law of Consecration</li>
         \tThis covenant means dedicating our time, talents, and everything with which the Lord has blessed us, or everything with which He may bless us, to building 
-          up Jesus Christ’s Church on the earth.
+          up Jesus Christ\'s Church on the earth.
         </ul>
 
       `,
       `
-        Making and keeping covenants is a way to draw closer to God and receive His blessings. The \“endowment of power,\” where these covenants are made, should not 
-        be confused with the presentation of the endowment; the endowment of power means, according to Brigham Young, \”to receive all those ordinances in the house 
-        of the Lord, which are necessary for you, after you have departed this life, to . . . gain your eternal exaltation in spite of earth and hell.\”<sup>
-        <a href=”https://rsc.byu.edu/vol-5-no-2-2004/endowed-power” target=”_blank”>1</a></sup> This means that the power we receive through the endowment grants us 
+        Making and keeping covenants is a way to draw closer to God and receive His blessings. The \"endowment of power,\" where these covenants are made, should not 
+        be confused with the presentation of the endowment; the endowment of power means, according to Brigham Young, \"to receive all those ordinances in the house 
+        of the Lord, which are necessary for you, after you have departed this life, to . . . gain your eternal exaltation in spite of earth and hell.\"<sup>
+        <a href="https://rsc.byu.edu/vol-5-no-2-2004/endowed-power" target="_blank">1</a></sup> This means that the power we receive through the endowment grants us 
         the ability, through the grace and power of Jesus Christ and His Atonement, to overcome the effects of the Fall. We, like Adam and Eve, have fallen out of the 
         presence of God; but because Jesus Christ has satisfied the demands of justice, He can offer us mercy, and empower us to become like Him through this covenantal 
-        relationship we develop with Him, that way He can “seal us his” (Mosiah 5:15).  That is why the temple is so important to the latter day work.
+        relationship we develop with Him, that way He can \"seal us his\" (Mosiah 5:15).  That is why the temple is so important to the latter day work.
       `,
       `
         Temples are considered to be the most sacred places of worship in the Church. They are used for performing certain ordinances and making specific covenants with 
