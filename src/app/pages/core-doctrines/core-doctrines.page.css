@@ -36,5 +36,20 @@
 
 .doctrine-grid {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+@media (min-width: 540px) {
+  .doctrine-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (min-width: 835px) {
+  .doctrine-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
 }
