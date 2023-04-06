@@ -1,34 +1,32 @@
 <div class="content">
   <div style="padding-top: 20px">
-    <div *ngFor="let doctrine of coreDoctrines">
-      <a
-        class="card"
-        target="_blank"
-        rel="noopener"
-        (click)="onSelectCard(doctrine.title)"
-      >
-        <svg
-          class="material-icons"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
+    <h1 style="text-align: center; font-size: 5em; padding-bottom: 40px">
+      Core Doctrines
+    </h1>
+    <div class="doctrine-grid">
+      <div *ngFor="let doctrine of coreDoctrines">
+        <a
+          class="doctrine-card doctrine-card-image"
+          (click)="onSelectCard(doctrine.title)"
+          [ngStyle]="{backgroundImage: doctrine.img}"
         >
-          <path
-            d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"
-          />
-        </svg>
-        <span>{{ doctrine.title }}</span>
-        <svg
-          class="material-icons"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-        </svg>
-      </a>
+          <div class="doctrine-card-footer">
+            <h4 style="padding-left: 5px; padding-bottom: 5px">
+              {{ doctrine.title }}
+            </h4>
+            <svg
+              class="material-icons"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              style="margin-top: auto; margin-bottom: auto; margin-left: auto"
+            >
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+            </svg>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </div>

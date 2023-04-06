@@ -1,0 +1,40 @@
+.doctrine-card {
+  all: unset;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  height: 400px;
+  width: 250px;
+  margin: 0 8px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+}
+
+.doctrine-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+.doctrine-card-footer {
+  background-color: antiquewhite;
+  height: 40px;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+}
+
+.doctrine-card-image {
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.doctrine-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}

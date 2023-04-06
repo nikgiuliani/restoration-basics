@@ -1,35 +1,56 @@
 <!-- Resources -->
-<div style="background: url(../assets/img/firstvisionarial.jpg) no-repeat fixed center; padding-bottom: 350px; ">
-    <div class="content" role="main">
-        <div style="padding-top: 20px;">
-            <h2 style="text-align: center;">Welcome to Restoration Basics</h2>
-            <p style="text-align: center;">This is a place you can come to experience the marvelous work of the Restoration</p>
-
-            <div class="card-container">
-                <div (click)="cardClickEvent('doctrines')">
-                <a class="card" target="_blank" rel="noopener">
-                    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
-                    </svg>
-                    <span>Core Doctrines</span>
-                    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-                    </svg> 
-                </a>
-                </div>
-
-                <a class="card" target="_blank" rel="noopener" href="https://angular.io/cli">
-                    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
-                    </svg>
-                    <span>First Vision Accounts</span>
-                    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-                    </svg>
-                </a>
-
-            </div>
+<div class="content">
+  <h2 style="text-align: center; font-size: 4em">
+    Welcome to Restoration Basics
+  </h2>
+  <p style="text-align: center; font-size: 20px">
+    This is a place you can come to experience the marvelous work of the
+    Restoration
+  </p>
+</div>
+<div
+  style="
+    background: url(../assets/img/firstvisionarial.jpg) no-repeat fixed center;
+    padding-bottom: 350px;
+    margin-top: -50px;
+  "
+>
+  <div class="content" role="main">
+    <div style="padding-top: 20px">
+      <div class="card-container">
+        <div (click)="cardClickEvent('doctrines')">
+          <a class="card">
+            <h4>Core Doctrines</h4>
+            <svg
+              class="material-icons"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+            </svg>
+          </a>
         </div>
-        <p style="text-align: center;">Disclaimer: This is not an official website of the Church of Jesus Christ of Latter-day Saints</p>
+        <div (click)="cardClickEvent('first-vision')">
+          <a class="card">
+            <h4>First Vision Accounts</h4>
+            <svg
+              class="material-icons"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
+    <p style="text-align: center">
+      Disclaimer: This is not an official website of the Church of Jesus Christ
+      of Latter-day Saints
+    </p>
+  </div>
 </div>
