@@ -1,7 +1,18 @@
+<ion-button
+  fill="clear"
+  (click)="closePage()"
+  style="position: fixed; right: 10px; top: 8px"
+>
+  <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+</ion-button>
 <div class="popover-container">
   <div>
-    <!-- style="text-align: center;" -->
-    <h2>{{ doctrineData.title }}</h2>
+    <div
+      style="display: flex; flex-direction: row; justify-content: space-between"
+    >
+      <h2>{{ doctrineData.title }}</h2>
+    </div>
+
     <div *ngFor="let text of doctrineData.text">
       <p [innerHTML]="text"></p>
       <br />
