@@ -21,3 +21,5 @@ export class CoreDoctrinesComponent implements OnInit {
     this.popoverService.displayDoctrineDetails(title);
   }
 }
+
+

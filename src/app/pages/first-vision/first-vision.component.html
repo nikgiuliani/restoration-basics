@@ -1,1 +1,94 @@
-<p class="content" style="padding-top: 20px">first-vision works!</p>
+<p class="content" style="padding-top: 20px"></p>
+<h1 class="header">First Vision Accounts</h1>
+
+<div class="filler">
+  <div class="filler-inner">
+    <div style="text-align: left">
+      <p>
+        The First Vision is a pivotal event in the history of The Church of
+        Jesus Christ of Latter-day Saints. It was the moment when God the Father
+        and His Son, Jesus Christ, appeared to Joseph Smith in answer to his
+        prayer about which church to join. The First Vision represents the
+        beginning of the restoration of the gospel of Jesus Christ in its
+        fullness, and it laid the foundation for the Church's beliefs.
+      </p>
+      <br />
+      <p>
+        There are four different accounts of the First Vision, recorded by
+        Joseph Smith at different years in his life: 1832, 1835, 1838, 1842. The
+        differences in accounts can be attributed to factors such as changes in
+        Joseph Smith's perspective over time, the intended audience, and the
+        purpose for which each account was given. Despite the slight variations
+        in details, all accounts testify of the reality of the vision and the
+        divine nature of the message Joseph received.
+      </p>
+      <br />
+      <p>
+        On this website, you can compare and contrast each pair of accounts
+        using the buttons below. Choose both a button from the left column and
+        right column to examine the similarities and differences in their
+        narratives. Through a careful analysis of these accounts, your faith and
+        understanding of First Vision and its significance will grow.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+  <div class="container">
+    <div class="column">
+      <button class="button" (click)="onButtonClick('left', '1832')">
+        1832
+      </button>
+      <button class="button" (click)="onButtonClick('left', '1835')">
+        1835
+      </button>
+      <button class="button" (click)="onButtonClick('left', '1838')">
+        1838
+      </button>
+      <button class="button" (click)="onButtonClick('left', '1842')">
+        1842
+      </button>
+    </div>
+    <div class="column">
+      <button class="button" (click)="onButtonClick('right', '1832')">
+        1832
+      </button>
+      <button class="button" (click)="onButtonClick('right', '1835')">
+        1835
+      </button>
+      <button class="button" (click)="onButtonClick('right', '1838')">
+        1838
+      </button>
+      <button class="button" (click)="onButtonClick('right', '1842')">
+        1842
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="filler">
+  <div class="filler-inner" style="text-align: left">
+    <h3>Context:</h3>
+    <p>{{ Context1 }}</p>
+    <br /><br />
+    <p>{{ Context2 }}</p>
+
+    <h3>Comparison</h3>
+    <p [innerHTML]="comparison"></p>
+    <br />
+    <span class="backdrop">Similarities</span> |
+    <span class="blue">Contradictions</span> |
+    <span class="pink">In One but not the Other</span>
+  </div>
+</div>
+<div class="container text-container">
+  <div class="text-column">
+    <h2 class="yearHead">{{ leftTitle }}</h2>
+    <p [innerHTML]="leftText"></p>
+  </div>
+  <div class="text-column">
+    <h2 class="yearHead">{{ rightTitle }}</h2>
+    <p [innerHTML]="rightText"></p>
+  </div>
+</div>
