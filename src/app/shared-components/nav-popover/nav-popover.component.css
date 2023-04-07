@@ -1,0 +1,16 @@
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: min(65vh, 140px);
+  padding: 5px;
+}
+
+.option-separator {
+  vertical-align: auto;
+  border-bottom: 1px solid grey;
+}
+
+.text-align {
+  text-align: center;
+}
