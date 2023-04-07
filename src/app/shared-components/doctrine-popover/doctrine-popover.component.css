@@ -1,7 +1,7 @@
-.close-button {
-  position: fixed;
-  right: 10px;
-  top: 8px;
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .doctrine-titles {

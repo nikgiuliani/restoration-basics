@@ -1,12 +1,13 @@
-<ion-button fill="clear" (click)="closePage()" class="close-button">
-  <ion-icon slot="icon-only" name="close-outline"></ion-icon>
-</ion-button>
 <div class="popover-container">
   <div>
-    <div class="doctrine-titles">
-      <h2>{{ doctrineData.title }}</h2>
+    <div class="header">
+      <div class="doctrine-titles">
+        <h2>{{ doctrineData.title }}</h2>
+      </div>
+      <ion-button fill="clear" (click)="closePage()">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
     </div>
-
     <div *ngFor="let text of doctrineData.text">
       <p [innerHTML]="text"></p>
       <br />
