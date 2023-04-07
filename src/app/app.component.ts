@@ -12,8 +12,8 @@ export class AppComponent implements OnInit {
   innerWidth: any;
 
   @HostListener('window:resize', ['$event'])
-  onResize(event) {
-    this.innerWidth = event.target.innerWidth;
+  onResize() {
+    this.innerWidth = window.innerWidth;
   }
 
   constructor(private popoverController: PopoverController) {}
