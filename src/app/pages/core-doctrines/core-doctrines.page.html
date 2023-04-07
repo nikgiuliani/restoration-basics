@@ -1,8 +1,6 @@
 <div class="content">
-  <div style="padding-top: 20px">
-    <h1 style="text-align: center; font-size: 5em; padding-bottom: 40px">
-      Core Doctrines
-    </h1>
+  <div class="page-content-visibility">
+    <h1 class="page-title">Core Doctrines</h1>
     <div class="doctrine-grid">
       <div *ngFor="let doctrine of coreDoctrines">
         <a
@@ -11,16 +9,14 @@
           [ngStyle]="{backgroundImage: doctrine.img}"
         >
           <div class="doctrine-card-footer">
-            <h4 style="padding-left: 5px; padding-bottom: 5px">
-              {{ doctrine.title }}
-            </h4>
+            <h4 class="doctrine-card-title">{{ doctrine.title }}</h4>
             <svg
               class="material-icons"
               xmlns="http://www.w3.org/2000/svg"
               width="20"
               height="20"
               viewBox="0 0 24 24"
-              style="margin-top: auto; margin-bottom: auto; margin-left: auto"
+              class="chevron-icon"
             >
               <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
             </svg>

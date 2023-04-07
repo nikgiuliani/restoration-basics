@@ -265,28 +265,6 @@ svg#clouds {
   width: 1920px;
 }
 
-/* Responsive Styles */
-/* @media screen and (max-width: 767px) {
-  .card-container > *:not(.circle-link),
-  .terminal {
-    width: 100%;
-  }
-
-  .card:not(.highlight-card) {
-    height: 16px;
-    margin: 8px 0;
-  }
-
-  .card.highlight-card span {
-    margin-left: 72px;
-  }
-
-  svg#rocket-smoke {
-    right: 120px;
-    transform: rotate(-5deg);
-  }
-} */
-
 @media screen and (max-width: 575px) {
   svg#rocket-smoke {
     display: none;
@@ -297,4 +275,13 @@ svg#clouds {
 .popover-content {
   --height: min(90vh, 460px) !important;
   --width: min(92vw, 770px) !important;
+}
+
+.nav-popover-content {
+  --height: min(65vh, 150px) !important;
+  --width: min(30vw, 200px) !important;
+}
+
+.page-content-visibility {
+  padding-top: 20px;
 }

@@ -3,35 +3,30 @@
   <div class="temple-icon" (click)="navigateTo('home')">
     <img width="40" alt="Restoration" src="../assets/img/temple-icon.png" />
   </div>
-  <ul style="padding-left: 5px">
-    <li
-      (click)="navigateTo('home')"
-      style="display: inline; padding-right: 15px"
-    >
-      <a class="nav-items">Home</a>
-    </li>
-    <li
-      (click)="navigateTo('doctrines')"
-      style="display: inline; padding-right: 15px"
-    >
-      <a class="nav-items">Core Doctrines</a>
-    </li>
-    <li
-      (click)="navigateTo('first-vision')"
-      style="display: inline; padding-right: 15px"
-    >
-      <a class="nav-items">First Vision Accounts</a>
-    </li>
-  </ul>
+  <div *ngIf="innerWidth >= 495">
+    <ul class="nav-list">
+      <li (click)="navigateTo('home')" class="nav-list-item">
+        <a class="nav-items">Home</a>
+      </li>
+      <li (click)="navigateTo('doctrines')" class="nav-list-item">
+        <a class="nav-items">Core Doctrines</a>
+      </li>
+      <li (click)="navigateTo('first-vision')" class="nav-list-item">
+        <a class="nav-items">First Vision Accounts</a>
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="innerWidth < 495">
+    <ion-icon
+      name="list-outline"
+      size="large"
+      (click)="displayNavOptions($event)"
+    ></ion-icon>
+  </div>
+
   <div class="spacer"></div>
-  <!-- <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
-    <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-      <rect width="400" height="400" fill="none"/>
-      <path d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23" fill="#fff"/>
-    </svg>
-  </a> -->
   <a
-    style="padding-right: 10px"
+    class="youtube"
     aria-label="The Unfolding Restoration"
     target="_blank"
     rel="noopener"
@@ -55,7 +50,7 @@
   </a>
 </div>
 
-<div style="padding-bottom: 80px">
+<div class="pages">
   <div [ngSwitch]="currentPage">
     <div *ngSwitchCase="'home'">
       <app-home [(currentPage)]="currentPage"></app-home>
@@ -69,29 +64,9 @@
   </div>
 </div>
 
-<div
-  style="
-    background-color: #2e67a0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: white;
-    font-weight: 600;
-  "
->
-  <div
-    class="card-container"
-    style="
-      margin-top: 6px;
-      margin-bottom: 6px;
-      display: flex;
-      justify-items: center;
-    "
-  >
-    <span style="margin-top: auto; margin-bottom: auto">
-      Restoration Basics
-    </span>
+<div class="footer-container">
+  <div class="card-container footer-card-container">
+    <span class="footer-title"> Restoration Basics </span>
     <a
       title="Official Website of the Church"
       href="https://www.churchofjesuschrist.org/"

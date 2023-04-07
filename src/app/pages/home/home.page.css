@@ -1,0 +1,20 @@
+.background-container {
+  background: url("../../../assets/img/firstvisionarial.jpg") no-repeat fixed
+    center;
+  padding-bottom: 350px;
+  margin-top: -50px;
+}
+
+.disclaimer {
+  text-align: center;
+}
+
+.page-title {
+  text-align: center;
+  font-size: min(4em, 15vw);
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 20px;
+}

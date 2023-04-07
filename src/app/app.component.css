@@ -1,17 +1,56 @@
 a.nav-items {
-    color: white;
-    cursor: pointer;
+  color: white;
+  cursor: pointer;
 }
 
 a.nav-items:hover {
-    color: rgb(206, 206, 206);
+  color: rgb(206, 206, 206);
+}
+
+.nav-list {
+  padding-left: 5px;
+}
+
+.nav-list-item {
+  display: inline;
+  padding-right: 15px;
+}
+
+.footer-card-container {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  display: flex;
+  justify-items: center;
+}
+
+.footer-container {
+  background-color: #2e67a0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  font-weight: 600;
+}
+
+.footer-title {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.pages {
+  padding-bottom: 80px;
 }
 
 .temple-icon {
-    padding-left: 10px;
-    cursor: pointer;
+  padding-left: 10px;
+  cursor: pointer;
 }
 
 .temple-icon:hover {
-    opacity: 80%;
+  opacity: 80%;
+}
+
+.youtube {
+  padding-right: 10px;
 }

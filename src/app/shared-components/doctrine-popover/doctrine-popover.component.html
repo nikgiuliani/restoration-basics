@@ -1,15 +1,9 @@
-<ion-button
-  fill="clear"
-  (click)="closePage()"
-  style="position: fixed; right: 10px; top: 8px"
->
+<ion-button fill="clear" (click)="closePage()" class="close-button">
   <ion-icon slot="icon-only" name="close-outline"></ion-icon>
 </ion-button>
 <div class="popover-container">
   <div>
-    <div
-      style="display: flex; flex-direction: row; justify-content: space-between"
-    >
+    <div class="doctrine-titles">
       <h2>{{ doctrineData.title }}</h2>
     </div>
 

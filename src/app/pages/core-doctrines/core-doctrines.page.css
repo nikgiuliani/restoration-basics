@@ -1,3 +1,9 @@
+.chevron-icon {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+
 .doctrine-card {
   all: unset;
   border-radius: 4px;
@@ -34,6 +40,11 @@
   background-position: center;
 }
 
+.doctrine-card-title {
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
 .doctrine-grid {
   display: grid;
   grid-template-columns: auto;
@@ -52,4 +63,10 @@
     display: grid;
     grid-template-columns: auto auto auto;
   }
+}
+
+.page-title {
+  text-align: center;
+  font-size: min(5em, 15vw);
+  padding-bottom: 40px;
 }
