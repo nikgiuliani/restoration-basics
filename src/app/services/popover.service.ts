@@ -17,6 +17,7 @@ export class PopoverService {
     const doctrineData = CORE_DOCTRINES[doctrineId];
     const popover = await this.popoverController.create({
       component: DoctrinePopoverComponent,
+      mode: 'md',
       componentProps: {
         doctrineData: doctrineData,
       },

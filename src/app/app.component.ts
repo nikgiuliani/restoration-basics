@@ -32,6 +32,7 @@ export class AppComponent implements OnInit {
     const popover = await this.popoverController.create({
       component: NavPopoverComponent,
       event: ev,
+      mode: 'md',
       cssClass: 'nav-popover-content',
       side: 'bottom',
       alignment: 'end',
